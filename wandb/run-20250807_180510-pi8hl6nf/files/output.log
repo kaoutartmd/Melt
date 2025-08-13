@@ -1,0 +1,37 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : commons_harvest__open
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : social-influence-structured
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on commons_harvest__open
+================================================================================
+Creating environment: commons_harvest__open
+[DEBUG] Using roles: ['default', 'default', 'default', 'default', 'default', 'default', 'default']
+Structured feature dimension: 20
+Creating attention_influence trainer...
+Feature dim: 20, Action dim: 8
+Starting training for 5000 episodes...
+Observation type: <class 'dict'>
+Observation keys: ['COLLECTIVE_REWARD', 'READY_TO_SHOOT', 'RGB', 'WORLD.RGB']
+  COLLECTIVE_REWARD: shape (), dtype float64
+  READY_TO_SHOOT: shape (), dtype float64
+  RGB: shape (88, 88, 3), dtype uint8
+  WORLD.RGB: shape (144, 192, 3), dtype uint8

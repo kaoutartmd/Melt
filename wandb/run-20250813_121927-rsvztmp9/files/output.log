@@ -1,0 +1,47 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : commons_harvest__open
+num_players         : None
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 2000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : social-influence-structured
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on commons_harvest__open
+================================================================================
+[INFO] Using default player count for 'commons_harvest__open': 7
+[DEBUG] Using roles: ['default', 'default', 'default', 'default', 'default', 'default', 'default']
+[INFO] Successfully created environment 'commons_harvest__open' with 7 players
+[INFO] Wrapper initialized - Feature dim: 28, Players: 7
+[CONFIG] Updated player count: 7
+[CONFIG] Creating attention_influence trainer...
+[CONFIG] Feature dim: 28, Action dim: 8
+Starting training for 5000 episodes...
+/home/kaou-internship/meltingpot/examples/rllib/attention_influence_ppo.py:542: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  neighbor_positions_tensor = torch.FloatTensor(
+Episode      0 | Avg Reward:   148.00 | Current:   148.00
+Episode     10 | Avg Reward:   159.27 | Current:   196.00
+Episode     20 | Avg Reward:   179.00 | Current:   185.00
+Episode     30 | Avg Reward:   200.97 | Current:   242.00
+Episode     40 | Avg Reward:   206.44 | Current:   225.00
+Episode     50 | Avg Reward:   212.80 | Current:   184.00
+Episode     60 | Avg Reward:   216.33 | Current:   280.00
+Episode     70 | Avg Reward:   219.77 | Current:   283.00
+Episode     80 | Avg Reward:   217.19 | Current:   106.00
+Episode     90 | Avg Reward:   215.80 | Current:   197.00
+Episode    100 | Avg Reward:   216.20 | Current:   214.00
+Episode    110 | Avg Reward:   223.13 | Current:   230.00

@@ -1,0 +1,27 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : commons_harvest_open
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : social-influence-structured
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on commons_harvest_open
+================================================================================
+Creating environment: commons_harvest_open
+Training failed with error: commons_harvest_open not in frozenset({'running_with_scissors_in_the_matrix__repeated', 'commons_harvest__open', 'commons_harvest__closed', 'stag_hunt_in_the_matrix__arena', 'chemistry__three_metabolic_cycles_with_plentiful_distractors', 'territory__rooms', 'chicken_in_the_matrix__arena', 'predator_prey__orchard', 'collaborative_cooking__ring', 'chemistry__two_metabolic_cycles_with_distractors', 'coop_mining', 'coins', 'collaborative_cooking__asymmetric', 'bach_or_stravinsky_in_the_matrix__repeated', 'gift_refinements', 'chemistry__three_metabolic_cycles', 'running_with_scissors_in_the_matrix__one_shot', 'collaborative_cooking__cramped', 'territory__open', 'paintball__king_of_the_hill', 'daycare', 'chicken_in_the_matrix__repeated', 'collaborative_cooking__figure_eight', 'paintball__capture_the_flag', 'running_with_scissors_in_the_matrix__arena', 'allelopathic_harvest__open', 'prisoners_dilemma_in_the_matrix__arena', 'commons_harvest__partnership', 'predator_prey__random_forest', 'chemistry__two_metabolic_cycles', 'predator_prey__open', 'externality_mushrooms__dense', 'pure_coordination_in_the_matrix__arena', 'rationalizable_coordination_in_the_matrix__arena', 'stag_hunt_in_the_matrix__repeated', 'collaborative_cooking__crowded', 'fruit_market__concentric_rivers', 'rationalizable_coordination_in_the_matrix__repeated', 'pure_coordination_in_the_matrix__repeated', 'factory_commons__either_or', 'collaborative_cooking__forced', 'boat_race__eight_races', 'territory__inside_out', 'bach_or_stravinsky_in_the_matrix__arena', 'collaborative_cooking__circuit', 'predator_prey__alley_hunt', 'hidden_agenda', 'prisoners_dilemma_in_the_matrix__repeated', 'clean_up'}).

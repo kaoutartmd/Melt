@@ -1,0 +1,80 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            jnsrdqo003n6qvssl795yzwkvgi23z8u:
+                args:
+                    - --use-wandb
+                    - --substrate
+                    - harvest
+                email: kaoutar.et-tamadit@uit.ac.ma
+                executable: /home/kaou-internship/anaconda3/envs/melt/bin/python
+                git:
+                    commit: 652d46042dddde7ddc6e7967715f2d7124ebc218
+                    remote: https://github.com/google-deepmind/meltingpot
+                host: kaou-internship-Precision-5820-Tower
+                os: Linux-6.14.0-24-generic-x86_64-with-glibc2.39
+                program: -m examples.rllib.training
+                python: CPython 3.11.11
+                root: /home/kaou-internship/meltingpot
+                startedAt: "2025-08-07T14:52:47.977507Z"
+                writerId: jnsrdqo003n6qvssl795yzwkvgi23z8u
+        m: []
+        python_version: 3.11.11
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 12
+            "2":
+                - 1
+                - 2
+                - 3
+                - 12
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.11
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": linux-x86_64
+action_dim:
+    value: null
+curriculum_steps:
+    value: 1000000
+device:
+    value: cuda
+eps_clip:
+    value: 0.2
+feature_dim:
+    value: null
+gamma:
+    value: 0.99
+hidden_dim:
+    value: 256
+influence_weight:
+    value: 0.1
+k_epochs:
+    value: 4
+log_interval:
+    value: 10
+lr:
+    value: 0.0003
+model_type:
+    value: attention_influence
+num_episodes:
+    value: 5000
+num_players:
+    value: 7
+save_interval:
+    value: 500
+substrate_name:
+    value: harvest
+use_wandb:
+    value: true
+wandb_entity:
+    value: null
+wandb_project:
+    value: social-influence-structured

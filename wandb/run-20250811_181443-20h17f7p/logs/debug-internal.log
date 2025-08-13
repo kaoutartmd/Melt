@@ -1,0 +1,8 @@
+{"time":"2025-08-11T18:14:43.86152254+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-11T18:14:44.188366278+01:00","level":"INFO","msg":"stream: created new stream","id":"20h17f7p"}
+{"time":"2025-08-11T18:14:44.188424702+01:00","level":"INFO","msg":"stream: started","id":"20h17f7p"}
+{"time":"2025-08-11T18:14:44.188468831+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"20h17f7p"}
+{"time":"2025-08-11T18:14:44.188499815+01:00","level":"INFO","msg":"handler: started","stream_id":"20h17f7p"}
+{"time":"2025-08-11T18:14:44.188539441+01:00","level":"INFO","msg":"sender: started","stream_id":"20h17f7p"}
+{"time":"2025-08-11T18:32:44.963989257+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/kaoutar-et-tamadit-ibn-tofail/item-aware-social-influence/20h17f7p/file_stream"}
+{"time":"2025-08-11T18:32:44.964079277+01:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/kaoutar-et-tamadit-ibn-tofail/item-aware-social-influence/20h17f7p/file_stream: {\"error\":\"project kaoutar-et-tamadit-ibn-tofail/item-aware-social-influence not found while streaming file\"}"}

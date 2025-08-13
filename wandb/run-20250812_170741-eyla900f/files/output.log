@@ -1,0 +1,209 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : commons_harvest__open
+num_players         : None
+model_type          : basic_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : social-influence-structured
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: basic_influence on commons_harvest__open
+================================================================================
+[INFO] Using default player count for 'commons_harvest__open': 7
+[DEBUG] Using roles: ['default', 'default', 'default', 'default', 'default', 'default', 'default']
+[INFO] Successfully created environment 'commons_harvest__open' with 7 players
+[INFO] Wrapper initialized - Feature dim: 28, Players: 7
+[CONFIG] Updated player count: 7
+[CONFIG] Creating basic_influence trainer...
+[CONFIG] Feature dim: 28, Action dim: 8
+Starting training for 5000 episodes...
+Episode      0 | Avg Reward:   143.00 | Current:   143.00
+Episode     10 | Avg Reward:   158.36 | Current:    81.00
+Episode     20 | Avg Reward:   160.10 | Current:   191.00
+Episode     30 | Avg Reward:   163.03 | Current:   222.00
+Episode     40 | Avg Reward:   174.22 | Current:   260.00
+Episode     50 | Avg Reward:   182.04 | Current:   216.00
+Episode     60 | Avg Reward:   187.31 | Current:   195.00
+Episode     70 | Avg Reward:   192.13 | Current:   192.00
+Episode     80 | Avg Reward:   195.79 | Current:   231.00
+Episode     90 | Avg Reward:   200.97 | Current:   252.00
+Episode    100 | Avg Reward:   203.56 | Current:   226.00
+Episode    110 | Avg Reward:   209.91 | Current:   227.00
+Episode    120 | Avg Reward:   214.84 | Current:   235.00
+Episode    130 | Avg Reward:   219.47 | Current:   222.00
+Episode    140 | Avg Reward:   221.42 | Current:   242.00
+Episode    150 | Avg Reward:   221.32 | Current:   221.00
+Episode    160 | Avg Reward:   221.85 | Current:   179.00
+Episode    170 | Avg Reward:   220.92 | Current:   191.00
+Episode    180 | Avg Reward:   217.99 | Current:   181.00
+Episode    190 | Avg Reward:   214.06 | Current:   183.00
+Episode    200 | Avg Reward:   216.40 | Current:   242.00
+Episode    210 | Avg Reward:   218.71 | Current:   287.00
+Episode    220 | Avg Reward:   219.26 | Current:   284.00
+Episode    230 | Avg Reward:   218.22 | Current:   228.00
+Episode    240 | Avg Reward:   217.73 | Current:   241.00
+Episode    250 | Avg Reward:   216.75 | Current:   137.00
+Episode    260 | Avg Reward:   214.14 | Current:   238.00
+Episode    270 | Avg Reward:   214.80 | Current:   211.00
+Episode    280 | Avg Reward:   220.75 | Current:   260.00
+Episode    290 | Avg Reward:   225.87 | Current:   280.00
+Episode    300 | Avg Reward:   223.53 | Current:   231.00
+Episode    310 | Avg Reward:   222.71 | Current:   299.00
+Episode    320 | Avg Reward:   222.24 | Current:   273.00
+Episode    330 | Avg Reward:   223.46 | Current:   261.00
+Episode    340 | Avg Reward:   223.48 | Current:   296.00
+Episode    350 | Avg Reward:   224.85 | Current:   244.00
+Episode    360 | Avg Reward:   226.37 | Current:   225.00
+Episode    370 | Avg Reward:   226.11 | Current:   256.00
+Episode    380 | Avg Reward:   222.98 | Current:   210.00
+Episode    390 | Avg Reward:   221.05 | Current:   214.00
+Episode    400 | Avg Reward:   222.33 | Current:   263.00
+Episode    410 | Avg Reward:   220.61 | Current:   229.00
+Episode    420 | Avg Reward:   223.09 | Current:   229.00
+Episode    430 | Avg Reward:   224.41 | Current:   224.00
+Episode    440 | Avg Reward:   226.51 | Current:   289.00
+Episode    450 | Avg Reward:   228.34 | Current:   243.00
+Episode    460 | Avg Reward:   229.33 | Current:   260.00
+Episode    470 | Avg Reward:   230.16 | Current:   250.00
+Episode    480 | Avg Reward:   229.12 | Current:   154.00
+Episode    490 | Avg Reward:   228.35 | Current:   205.00
+Episode    500 | Avg Reward:   227.26 | Current:   186.00
+Saved checkpoint: checkpoints/basic_influence_commons_harvest__open_20250812_170741_episode_500.pt
+New best model saved: checkpoints/basic_influence_commons_harvest__open_20250812_170741_best.pt
+Episode    510 | Avg Reward:   227.49 | Current:   232.00
+Episode    520 | Avg Reward:   224.99 | Current:   223.00
+Episode    530 | Avg Reward:   225.40 | Current:   245.00
+Episode    540 | Avg Reward:   225.91 | Current:   173.00
+Episode    550 | Avg Reward:   224.95 | Current:   231.00
+Episode    560 | Avg Reward:   224.36 | Current:   175.00
+Episode    570 | Avg Reward:   225.65 | Current:   302.00
+Episode    580 | Avg Reward:   227.18 | Current:   192.00
+Episode    590 | Avg Reward:   228.86 | Current:   314.00
+Episode    600 | Avg Reward:   227.63 | Current:   210.00
+Episode    610 | Avg Reward:   226.34 | Current:   195.00
+Episode    620 | Avg Reward:   227.76 | Current:   227.00
+Episode    630 | Avg Reward:   226.76 | Current:   196.00
+Episode    640 | Avg Reward:   224.74 | Current:   239.00
+Episode    650 | Avg Reward:   223.48 | Current:   229.00
+Episode    660 | Avg Reward:   224.99 | Current:   179.00
+Episode    670 | Avg Reward:   222.26 | Current:   210.00
+Episode    680 | Avg Reward:   223.64 | Current:   215.00
+Episode    690 | Avg Reward:   221.54 | Current:   174.00
+Episode    700 | Avg Reward:   223.24 | Current:   233.00
+Episode    710 | Avg Reward:   224.02 | Current:   210.00
+Episode    720 | Avg Reward:   224.49 | Current:   211.00
+Episode    730 | Avg Reward:   225.06 | Current:   201.00
+Episode    740 | Avg Reward:   224.00 | Current:   201.00
+Episode    750 | Avg Reward:   223.16 | Current:   234.00
+Episode    760 | Avg Reward:   221.73 | Current:   272.00
+Episode    770 | Avg Reward:   225.09 | Current:   234.00
+Episode    780 | Avg Reward:   223.77 | Current:   191.00
+Episode    790 | Avg Reward:   223.89 | Current:   181.00
+Episode    800 | Avg Reward:   222.47 | Current:   246.00
+Episode    810 | Avg Reward:   220.07 | Current:   185.00
+Episode    820 | Avg Reward:   219.44 | Current:   254.00
+Episode    830 | Avg Reward:   219.15 | Current:   213.00
+Episode    840 | Avg Reward:   219.12 | Current:   246.00
+Episode    850 | Avg Reward:   220.88 | Current:   272.00
+Episode    860 | Avg Reward:   220.29 | Current:   210.00
+Episode    870 | Avg Reward:   218.88 | Current:   258.00
+Episode    880 | Avg Reward:   217.51 | Current:   188.00
+Episode    890 | Avg Reward:   219.15 | Current:   274.00
+Episode    900 | Avg Reward:   220.74 | Current:   188.00
+Episode    910 | Avg Reward:   224.88 | Current:   258.00
+Episode    920 | Avg Reward:   224.35 | Current:   194.00
+Episode    930 | Avg Reward:   228.64 | Current:   194.00
+Episode    940 | Avg Reward:   228.97 | Current:   214.00
+Episode    950 | Avg Reward:   230.25 | Current:   211.00
+Episode    960 | Avg Reward:   232.69 | Current:   247.00
+Episode    970 | Avg Reward:   231.15 | Current:   266.00
+Episode    980 | Avg Reward:   230.70 | Current:   205.00
+Episode    990 | Avg Reward:   226.40 | Current:   206.00
+Episode   1000 | Avg Reward:   224.88 | Current:   240.00
+Saved checkpoint: checkpoints/basic_influence_commons_harvest__open_20250812_170741_episode_1000.pt
+New best model saved: checkpoints/basic_influence_commons_harvest__open_20250812_170741_best.pt
+Episode   1010 | Avg Reward:   222.81 | Current:   245.00
+Episode   1020 | Avg Reward:   223.18 | Current:   223.00
+Episode   1030 | Avg Reward:   217.14 | Current:   196.00
+Episode   1040 | Avg Reward:   217.61 | Current:   189.00
+Episode   1050 | Avg Reward:   217.95 | Current:   271.00
+Episode   1060 | Avg Reward:   218.83 | Current:   294.00
+Episode   1070 | Avg Reward:   217.39 | Current:   201.00
+Episode   1080 | Avg Reward:   218.52 | Current:   221.00
+Episode   1090 | Avg Reward:   220.76 | Current:   242.00
+Episode   1100 | Avg Reward:   219.96 | Current:   105.00
+Episode   1110 | Avg Reward:   221.76 | Current:   225.00
+Episode   1120 | Avg Reward:   220.80 | Current:   230.00
+Episode   1130 | Avg Reward:   222.58 | Current:   238.00
+Episode   1140 | Avg Reward:   219.87 | Current:   228.00
+Episode   1150 | Avg Reward:   216.35 | Current:   184.00
+Episode   1160 | Avg Reward:   212.84 | Current:   168.00
+Episode   1170 | Avg Reward:   215.24 | Current:   271.00
+Episode   1180 | Avg Reward:   214.31 | Current:   256.00
+Episode   1190 | Avg Reward:   214.90 | Current:   191.00
+Episode   1200 | Avg Reward:   218.09 | Current:   250.00
+Episode   1210 | Avg Reward:   216.18 | Current:   204.00
+Episode   1220 | Avg Reward:   218.59 | Current:   283.00
+Episode   1230 | Avg Reward:   217.00 | Current:   253.00
+Episode   1240 | Avg Reward:   221.31 | Current:   299.00
+Episode   1250 | Avg Reward:   224.91 | Current:   282.00
+Episode   1260 | Avg Reward:   226.16 | Current:   188.00
+Episode   1270 | Avg Reward:   225.35 | Current:   249.00
+Episode   1280 | Avg Reward:   225.54 | Current:   214.00
+Episode   1290 | Avg Reward:   225.99 | Current:   241.00
+Episode   1300 | Avg Reward:   226.44 | Current:   251.00
+Episode   1310 | Avg Reward:   228.67 | Current:   218.00
+Episode   1320 | Avg Reward:   226.56 | Current:   224.00
+Episode   1330 | Avg Reward:   227.26 | Current:   259.00
+Episode   1340 | Avg Reward:   227.47 | Current:   279.00
+Episode   1350 | Avg Reward:   226.73 | Current:   227.00
+Episode   1360 | Avg Reward:   226.81 | Current:   184.00
+Episode   1370 | Avg Reward:   226.53 | Current:   157.00
+Episode   1380 | Avg Reward:   226.55 | Current:   199.00
+Episode   1390 | Avg Reward:   226.15 | Current:   138.00
+Episode   1400 | Avg Reward:   224.43 | Current:   264.00
+Episode   1410 | Avg Reward:   219.44 | Current:   213.00
+Episode   1420 | Avg Reward:   218.96 | Current:   319.00
+Episode   1430 | Avg Reward:   219.09 | Current:   287.00
+Episode   1440 | Avg Reward:   216.29 | Current:   184.00
+Episode   1450 | Avg Reward:   216.81 | Current:   290.00
+Episode   1460 | Avg Reward:   217.22 | Current:   193.00
+Episode   1470 | Avg Reward:   218.20 | Current:   265.00
+Episode   1480 | Avg Reward:   222.21 | Current:   248.00
+Episode   1490 | Avg Reward:   222.30 | Current:   252.00
+Episode   1500 | Avg Reward:   222.12 | Current:   154.00
+Saved checkpoint: checkpoints/basic_influence_commons_harvest__open_20250812_170741_episode_1500.pt
+Episode   1510 | Avg Reward:   225.54 | Current:   195.00
+Episode   1520 | Avg Reward:   225.69 | Current:   160.00
+Episode   1530 | Avg Reward:   224.92 | Current:   153.00
+Episode   1540 | Avg Reward:   224.02 | Current:   191.00
+Episode   1550 | Avg Reward:   222.44 | Current:   201.00
+Episode   1560 | Avg Reward:   222.35 | Current:   249.00
+Episode   1570 | Avg Reward:   223.04 | Current:   258.00
+Episode   1580 | Avg Reward:   221.31 | Current:   250.00
+Episode   1590 | Avg Reward:   221.23 | Current:   173.00
+Episode   1600 | Avg Reward:   219.39 | Current:   196.00
+Episode   1610 | Avg Reward:   220.19 | Current:   271.00
+Episode   1620 | Avg Reward:   219.34 | Current:   244.00
+Episode   1630 | Avg Reward:   220.60 | Current:   234.00
+Episode   1640 | Avg Reward:   219.61 | Current:   212.00
+Episode   1650 | Avg Reward:   219.23 | Current:   240.00
+Episode   1660 | Avg Reward:   219.17 | Current:   230.00
+Episode   1670 | Avg Reward:   220.13 | Current:   224.00
+Episode   1680 | Avg Reward:   219.19 | Current:   229.00
+Episode   1690 | Avg Reward:   217.35 | Current:   175.00
+Episode   1700 | Avg Reward:   218.48 | Current:   203.00

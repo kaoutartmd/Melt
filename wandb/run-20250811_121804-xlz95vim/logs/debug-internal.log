@@ -1,0 +1,13 @@
+{"time":"2025-08-11T12:18:05.163891032+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-11T12:18:05.487941991+01:00","level":"INFO","msg":"stream: created new stream","id":"xlz95vim"}
+{"time":"2025-08-11T12:18:05.488008308+01:00","level":"INFO","msg":"stream: started","id":"xlz95vim"}
+{"time":"2025-08-11T12:18:05.488034855+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"xlz95vim"}
+{"time":"2025-08-11T12:18:05.488056702+01:00","level":"INFO","msg":"sender: started","stream_id":"xlz95vim"}
+{"time":"2025-08-11T12:18:05.488126788+01:00","level":"INFO","msg":"handler: started","stream_id":"xlz95vim"}
+{"time":"2025-08-11T12:18:22.432088385+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.802636233,"progress":"1.4MB/1.4MB"}],"total_operations":1}}
+{"time":"2025-08-11T12:18:22.564726678+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-11T12:18:22.901860217+01:00","level":"INFO","msg":"stream: closing","id":"xlz95vim"}
+{"time":"2025-08-11T12:18:22.90188329+01:00","level":"INFO","msg":"handler: closed","stream_id":"xlz95vim"}
+{"time":"2025-08-11T12:18:22.901896301+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xlz95vim"}
+{"time":"2025-08-11T12:18:22.901937199+01:00","level":"INFO","msg":"sender: closed","stream_id":"xlz95vim"}
+{"time":"2025-08-11T12:18:22.901992079+01:00","level":"INFO","msg":"stream: closed","id":"xlz95vim"}

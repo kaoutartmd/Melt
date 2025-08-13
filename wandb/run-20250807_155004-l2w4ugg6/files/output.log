@@ -1,0 +1,38 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : clean_up
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : social-influence-clean
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on clean_up
+================================================================================
+Creating environment: clean_up
+Structured feature dimension: 3
+Creating attention_influence trainer...
+Feature dim: 3, Action dim: 9
+Starting training for 5000 episodes...
+Observation type: <class 'dict'>
+Observation keys: ['COLLECTIVE_REWARD', 'RGB', 'READY_TO_SHOOT', 'NUM_OTHERS_WHO_CLEANED_THIS_STEP', 'WORLD.RGB']
+  COLLECTIVE_REWARD: shape (), dtype float64
+  RGB: shape (88, 88, 3), dtype uint8
+  READY_TO_SHOOT: shape (), dtype float64
+  NUM_OTHERS_WHO_CLEANED_THIS_STEP: shape (), dtype float64
+  WORLD.RGB: shape (168, 240, 3), dtype uint8
+Training failed with error: 'numpy.ndarray' object has no attribute 'get'

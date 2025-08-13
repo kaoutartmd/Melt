@@ -1,0 +1,6 @@
+{"time":"2025-08-13T12:19:27.674294384+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-13T12:19:28.005579699+01:00","level":"INFO","msg":"stream: created new stream","id":"rsvztmp9"}
+{"time":"2025-08-13T12:19:28.00564244+01:00","level":"INFO","msg":"stream: started","id":"rsvztmp9"}
+{"time":"2025-08-13T12:19:28.005689253+01:00","level":"INFO","msg":"sender: started","stream_id":"rsvztmp9"}
+{"time":"2025-08-13T12:19:28.00568904+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"rsvztmp9"}
+{"time":"2025-08-13T12:19:28.005715409+01:00","level":"INFO","msg":"handler: started","stream_id":"rsvztmp9"}

@@ -1,0 +1,34 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : commons_harvest__open
+num_players         : None
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : item-aware-social-influence
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on commons_harvest__open
+================================================================================
+Creating environment: commons_harvest__open
+[INFO] Using default player count for 'commons_harvest__open': 7
+[DEBUG] Valid roles for 'commons_harvest__open': ['default']
+[DEBUG] Using roles: ['default', 'default', 'default', 'default', 'default', 'default', 'default']
+[INFO] Successfully created environment 'commons_harvest__open' with 7 players
+[INFO] Initializing wrapper with 7 players...
+[ERROR] Failed to create environment 'commons_harvest__open': extract_structured_features() got an unexpected keyword argument 'agent_idx'
+[ERROR] Tried with 7 players and roles: ['default', 'default', 'default', 'default', 'default', 'default', 'default']
+Training failed with error: extract_structured_features() got an unexpected keyword argument 'agent_idx'

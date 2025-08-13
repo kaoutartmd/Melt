@@ -1,0 +1,36 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : coins
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : item-aware-social-influence
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on coins
+================================================================================
+Creating environment: coins
+[DEBUG] Substrate 'coins' info:
+  - Mandated players: 2
+  - Default players: 2
+  - Valid roles: ['default']
+[WARNING] Substrate 'coins' requires exactly 2 players.
+[WARNING] Ignoring requested 7 players, using 2.
+[DEBUG] Final configuration:
+  - Using 2 players
+  - Using roles: ('default', 'default')
+Training failed with error: extract_structured_features() takes 1 positional argument but 3 were given

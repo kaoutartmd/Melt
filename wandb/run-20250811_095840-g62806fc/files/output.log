@@ -1,0 +1,27 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : commons_harvest_open
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : social-influence-structured
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on commons_harvest_open
+================================================================================
+Creating environment: commons_harvest_open
+Training failed with error: commons_harvest_open not in frozenset({'daycare', 'territory__open', 'collaborative_cooking__crowded', 'factory_commons__either_or', 'collaborative_cooking__cramped', 'chemistry__two_metabolic_cycles_with_distractors', 'rationalizable_coordination_in_the_matrix__arena', 'externality_mushrooms__dense', 'collaborative_cooking__circuit', 'fruit_market__concentric_rivers', 'running_with_scissors_in_the_matrix__arena', 'coop_mining', 'predator_prey__orchard', 'bach_or_stravinsky_in_the_matrix__repeated', 'collaborative_cooking__forced', 'clean_up', 'predator_prey__open', 'predator_prey__alley_hunt', 'pure_coordination_in_the_matrix__arena', 'chemistry__three_metabolic_cycles_with_plentiful_distractors', 'stag_hunt_in_the_matrix__repeated', 'territory__inside_out', 'commons_harvest__closed', 'commons_harvest__open', 'hidden_agenda', 'stag_hunt_in_the_matrix__arena', 'paintball__capture_the_flag', 'collaborative_cooking__asymmetric', 'pure_coordination_in_the_matrix__repeated', 'chemistry__two_metabolic_cycles', 'rationalizable_coordination_in_the_matrix__repeated', 'paintball__king_of_the_hill', 'chicken_in_the_matrix__repeated', 'predator_prey__random_forest', 'chemistry__three_metabolic_cycles', 'bach_or_stravinsky_in_the_matrix__arena', 'collaborative_cooking__figure_eight', 'prisoners_dilemma_in_the_matrix__repeated', 'coins', 'territory__rooms', 'chicken_in_the_matrix__arena', 'running_with_scissors_in_the_matrix__repeated', 'commons_harvest__partnership', 'collaborative_cooking__ring', 'allelopathic_harvest__open', 'gift_refinements', 'boat_race__eight_races', 'prisoners_dilemma_in_the_matrix__arena', 'running_with_scissors_in_the_matrix__one_shot'}).

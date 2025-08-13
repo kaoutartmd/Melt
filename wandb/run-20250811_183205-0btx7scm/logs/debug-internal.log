@@ -1,0 +1,17 @@
+{"time":"2025-08-11T18:32:05.786146764+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-11T18:32:06.120584168+01:00","level":"INFO","msg":"stream: created new stream","id":"0btx7scm"}
+{"time":"2025-08-11T18:32:06.120658767+01:00","level":"INFO","msg":"stream: started","id":"0btx7scm"}
+{"time":"2025-08-11T18:32:06.120704354+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"0btx7scm"}
+{"time":"2025-08-11T18:32:06.120718776+01:00","level":"INFO","msg":"handler: started","stream_id":"0btx7scm"}
+{"time":"2025-08-11T18:32:06.120750745+01:00","level":"INFO","msg":"sender: started","stream_id":"0btx7scm"}
+{"time":"2025-08-11T20:12:36.983403904+01:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kaoutar-et-tamadit-ibn-tofail/social-influence-structured/0btx7scm/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-12T18:03:38.062430752+01:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kaoutar-et-tamadit-ibn-tofail/social-influence-structured/0btx7scm/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-12T23:36:07.483829361+01:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kaoutar-et-tamadit-ibn-tofail/social-influence-structured/0btx7scm/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-13T08:33:01.962868251+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kaoutar-et-tamadit-ibn-tofail/social-influence-structured/0btx7scm/file_stream\": dial tcp 35.186.228.49:443: connect: no route to host"}
+{"time":"2025-08-13T10:57:46.951174893+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-13T10:57:47.182057669+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-13T10:57:47.194361341+01:00","level":"INFO","msg":"stream: closing","id":"0btx7scm"}
+{"time":"2025-08-13T10:57:47.194391489+01:00","level":"INFO","msg":"handler: closed","stream_id":"0btx7scm"}
+{"time":"2025-08-13T10:57:47.194406338+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0btx7scm"}
+{"time":"2025-08-13T10:57:47.194417601+01:00","level":"INFO","msg":"sender: closed","stream_id":"0btx7scm"}
+{"time":"2025-08-13T10:57:47.194476821+01:00","level":"INFO","msg":"stream: closed","id":"0btx7scm"}

@@ -1,0 +1,68 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : coins
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : item-aware-social-influence
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on coins
+================================================================================
+Creating environment: coins
+[INFO] Substrate 'coins' requires 2 players
+[DEBUG] Using roles: ('default', 'default')
+Structured feature dimension: 20
+Number of players: 2
+
+=== OBSERVATION DEBUG ===
+Observation type: <class 'dict'>
+Observation keys: ['COLLECTIVE_REWARD', 'MISMATCHED_COIN_COLLECTED_BY_PARTNER', 'RGB', 'WORLD.RGB']
+  COLLECTIVE_REWARD: shape (), dtype float64
+  MISMATCHED_COIN_COLLECTED_BY_PARTNER: shape (), dtype float64
+  RGB: shape (88, 88, 3), dtype uint8
+  WORLD.RGB: shape (136, 136, 3), dtype uint8
+=========================
+
+[INFO] Environment created with 2 players
+[CONFIG] Updated player count: 2
+
+=== ENVIRONMENT VALIDATION ===
+Reset observation type: <class 'dict'>
+Number of agents: 2
+First agent observation type: <class 'dict'>
+✓ Structured features extracted: 20 dimensions
+✓ Item positions extracted: (0, 2)
+==============================
+
+Creating attention_influence trainer...
+Feature dim: 20, Action dim: 7
+Starting training for 5000 episodes...
+/home/kaou-internship/meltingpot/examples/rllib/attention_influence_ppo.py:443: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  neighbor_positions_tensor = torch.FloatTensor(neighbor_positions).to(self.device)
+Error in episode 0: mat1 and mat2 shapes cannot be multiplied (1x156 and 148x256)
+Continuing training...
+Error in episode 1: mat1 and mat2 shapes cannot be multiplied (1x156 and 148x256)
+Continuing training...
+Error in episode 2: mat1 and mat2 shapes cannot be multiplied (1x156 and 148x256)
+Continuing training...
+Error in episode 3: mat1 and mat2 shapes cannot be multiplied (1x156 and 148x256)
+Continuing training...
+Error in episode 4: mat1 and mat2 shapes cannot be multiplied (1x156 and 148x256)
+Continuing training...
+
+Training interrupted by user

@@ -1,0 +1,13 @@
+{"time":"2025-08-10T21:59:12.157805455+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-10T21:59:12.487196056+01:00","level":"INFO","msg":"stream: created new stream","id":"scas8epg"}
+{"time":"2025-08-10T21:59:12.487250093+01:00","level":"INFO","msg":"stream: started","id":"scas8epg"}
+{"time":"2025-08-10T21:59:12.487307281+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"scas8epg"}
+{"time":"2025-08-10T21:59:12.487317559+01:00","level":"INFO","msg":"handler: started","stream_id":"scas8epg"}
+{"time":"2025-08-10T21:59:12.487373121+01:00","level":"INFO","msg":"sender: started","stream_id":"scas8epg"}
+{"time":"2025-08-10T21:59:13.899967856+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-10T21:59:14.096308504+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 4-26","runtime_seconds":0.196075761}],"total_operations":1}}
+{"time":"2025-08-10T21:59:14.157812059+01:00","level":"INFO","msg":"stream: closing","id":"scas8epg"}
+{"time":"2025-08-10T21:59:14.157841737+01:00","level":"INFO","msg":"handler: closed","stream_id":"scas8epg"}
+{"time":"2025-08-10T21:59:14.157856784+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"scas8epg"}
+{"time":"2025-08-10T21:59:14.157897766+01:00","level":"INFO","msg":"sender: closed","stream_id":"scas8epg"}
+{"time":"2025-08-10T21:59:14.157981615+01:00","level":"INFO","msg":"stream: closed","id":"scas8epg"}

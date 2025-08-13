@@ -1,0 +1,187 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : fruit_market__concentric_rivers
+num_players         : None
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : fruit_market_melt
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on fruit_market__concentric_rivers
+================================================================================
+[INFO] Using default player count for 'fruit_market__concentric_rivers': 7
+[DEBUG] Using roles: ['banana_farmer', 'apple_farmer', 'banana_farmer', 'apple_farmer', 'banana_farmer', 'apple_farmer', 'banana_farmer']
+[INFO] Successfully created environment 'fruit_market__concentric_rivers' with 7 players
+[INFO] Wrapper initialized - Feature dim: 28, Players: 7
+[CONFIG] Updated player count: 7
+[WARNING] Unknown substrate 'fruit_market__concentric_rivers', using default action_dim=8
+[CONFIG] Creating attention_influence trainer...
+[CONFIG] Feature dim: 28, Action dim: 8
+Starting training for 5000 episodes...
+/home/kaou-internship/meltingpot/examples/rllib/attention_influence_ppo.py:501: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  neighbor_positions_tensor = torch.FloatTensor(neighbor_positions).to(self.device)
+Episode      0 | Avg Reward:    38.00 | Current:    38.00
+Episode     10 | Avg Reward:    83.27 | Current:   102.00
+Episode     20 | Avg Reward:    80.86 | Current:   146.00
+Episode     30 | Avg Reward:    86.77 | Current:   156.00
+Episode     40 | Avg Reward:    80.20 | Current:    90.00
+Episode     50 | Avg Reward:    80.02 | Current:    94.00
+Episode     60 | Avg Reward:    81.28 | Current:    89.00
+Episode     70 | Avg Reward:    85.08 | Current:    80.00
+Episode     80 | Avg Reward:    86.04 | Current:   129.00
+Episode     90 | Avg Reward:    88.15 | Current:    95.00
+Episode    100 | Avg Reward:    88.94 | Current:    78.00
+Episode    110 | Avg Reward:    88.46 | Current:    90.00
+Episode    120 | Avg Reward:    86.02 | Current:    30.00
+Episode    130 | Avg Reward:    83.64 | Current:    54.00
+Episode    140 | Avg Reward:    88.39 | Current:   144.00
+Episode    150 | Avg Reward:    90.59 | Current:   120.00
+Episode    160 | Avg Reward:    92.09 | Current:   122.00
+Episode    170 | Avg Reward:    89.32 | Current:   106.00
+Episode    180 | Avg Reward:    89.58 | Current:    88.00
+Episode    190 | Avg Reward:    87.95 | Current:    80.00
+Episode    200 | Avg Reward:    86.73 | Current:   126.00
+Episode    210 | Avg Reward:    89.04 | Current:    20.00
+Episode    220 | Avg Reward:    90.51 | Current:    44.00
+Episode    230 | Avg Reward:    88.11 | Current:    50.00
+Episode    240 | Avg Reward:    84.08 | Current:    44.00
+Episode    250 | Avg Reward:    84.85 | Current:   208.00
+Episode    260 | Avg Reward:    81.38 | Current:    78.00
+Episode    270 | Avg Reward:    82.02 | Current:    32.00
+Episode    280 | Avg Reward:    81.48 | Current:   124.00
+Episode    290 | Avg Reward:    80.71 | Current:    88.00
+Episode    300 | Avg Reward:    83.15 | Current:   150.00
+Episode    310 | Avg Reward:    81.28 | Current:    58.00
+Episode    320 | Avg Reward:    83.56 | Current:    77.00
+Episode    330 | Avg Reward:    87.22 | Current:    30.00
+Episode    340 | Avg Reward:    88.32 | Current:    60.00
+Episode    350 | Avg Reward:    86.93 | Current:   118.00
+Episode    360 | Avg Reward:    89.55 | Current:   120.00
+Episode    370 | Avg Reward:    88.60 | Current:    98.00
+Episode    380 | Avg Reward:    89.14 | Current:   118.00
+Episode    390 | Avg Reward:    88.01 | Current:    70.00
+Episode    400 | Avg Reward:    87.37 | Current:    72.00
+Episode    410 | Avg Reward:    88.06 | Current:   148.00
+Episode    420 | Avg Reward:    89.43 | Current:    72.00
+Episode    430 | Avg Reward:    89.85 | Current:    10.00
+Episode    440 | Avg Reward:    90.61 | Current:    41.00
+Episode    450 | Avg Reward:    90.26 | Current:    86.00
+Episode    460 | Avg Reward:    89.21 | Current:    38.00
+Episode    470 | Avg Reward:    92.65 | Current:    90.00
+Episode    480 | Avg Reward:    91.28 | Current:   124.00
+Episode    490 | Avg Reward:    92.78 | Current:    94.00
+Episode    500 | Avg Reward:    92.37 | Current:   112.00
+Saved checkpoint: checkpoints/attention_influence_fruit_market__concentric_rivers_20250811_183629_episode_500.pt
+New best model saved: checkpoints/attention_influence_fruit_market__concentric_rivers_20250811_183629_best.pt
+Episode    510 | Avg Reward:    90.56 | Current:    86.00
+Episode    520 | Avg Reward:    88.74 | Current:    82.00
+Episode    530 | Avg Reward:    90.22 | Current:    98.00
+Episode    540 | Avg Reward:    92.08 | Current:   160.00
+Episode    550 | Avg Reward:    90.06 | Current:    54.00
+Episode    560 | Avg Reward:    91.81 | Current:    74.00
+Episode    570 | Avg Reward:    89.44 | Current:   154.00
+Episode    580 | Avg Reward:    91.65 | Current:    32.00
+Episode    590 | Avg Reward:    90.73 | Current:   100.00
+Episode    600 | Avg Reward:    89.10 | Current:    28.00
+Episode    610 | Avg Reward:    87.98 | Current:    66.00
+Episode    620 | Avg Reward:    88.32 | Current:    68.00
+Episode    630 | Avg Reward:    85.98 | Current:    72.00
+Episode    640 | Avg Reward:    85.33 | Current:    66.00
+Episode    650 | Avg Reward:    86.63 | Current:    48.00
+Episode    660 | Avg Reward:    86.41 | Current:   158.00
+Episode    670 | Avg Reward:    86.05 | Current:    50.00
+Episode    680 | Avg Reward:    86.56 | Current:   106.00
+Episode    690 | Avg Reward:    90.21 | Current:   102.00
+Episode    700 | Avg Reward:    91.41 | Current:   136.00
+Episode    710 | Avg Reward:    92.17 | Current:    94.00
+Episode    720 | Avg Reward:    93.97 | Current:   150.00
+Episode    730 | Avg Reward:    95.84 | Current:    96.00
+Episode    740 | Avg Reward:    92.99 | Current:    78.00
+Episode    750 | Avg Reward:    95.95 | Current:   166.00
+Episode    760 | Avg Reward:    94.29 | Current:    64.00
+Episode    770 | Avg Reward:    93.91 | Current:    34.00
+Episode    780 | Avg Reward:    92.01 | Current:    44.00
+Episode    790 | Avg Reward:    90.58 | Current:   142.00
+Episode    800 | Avg Reward:    91.18 | Current:   148.00
+Episode    810 | Avg Reward:    94.06 | Current:   142.00
+Episode    820 | Avg Reward:    90.78 | Current:   144.00
+Episode    830 | Avg Reward:    89.87 | Current:    58.00
+Episode    840 | Avg Reward:    93.60 | Current:    76.00
+Episode    850 | Avg Reward:    92.24 | Current:    44.00
+Episode    860 | Avg Reward:    93.61 | Current:   116.00
+Episode    870 | Avg Reward:    91.15 | Current:    68.00
+Episode    880 | Avg Reward:    89.75 | Current:    70.00
+Episode    890 | Avg Reward:    90.92 | Current:    32.00
+Episode    900 | Avg Reward:    91.50 | Current:    62.00
+Episode    910 | Avg Reward:    89.72 | Current:    92.00
+Episode    920 | Avg Reward:    89.86 | Current:    44.00
+Episode    930 | Avg Reward:    87.00 | Current:    92.00
+Episode    940 | Avg Reward:    85.09 | Current:   190.00
+Episode    950 | Avg Reward:    83.25 | Current:   108.00
+Episode    960 | Avg Reward:    81.76 | Current:    42.00
+Episode    970 | Avg Reward:    87.16 | Current:    76.00
+Episode    980 | Avg Reward:    89.89 | Current:    26.00
+Episode    990 | Avg Reward:    86.28 | Current:   106.00
+Episode   1000 | Avg Reward:    85.32 | Current:    64.00
+Saved checkpoint: checkpoints/attention_influence_fruit_market__concentric_rivers_20250811_183629_episode_1000.pt
+Episode   1010 | Avg Reward:    85.62 | Current:   184.00
+Episode   1020 | Avg Reward:    86.76 | Current:    68.00
+Episode   1030 | Avg Reward:    87.41 | Current:    44.00
+Episode   1040 | Avg Reward:    87.64 | Current:   116.00
+Episode   1050 | Avg Reward:    89.60 | Current:   108.00
+Episode   1060 | Avg Reward:    90.69 | Current:    58.00
+Episode   1070 | Avg Reward:    87.99 | Current:    58.00
+Episode   1080 | Avg Reward:    86.62 | Current:    88.00
+Episode   1090 | Avg Reward:    89.88 | Current:   170.00
+Episode   1100 | Avg Reward:    88.06 | Current:    78.00
+Episode   1110 | Avg Reward:    87.24 | Current:    60.00
+Episode   1120 | Avg Reward:    89.98 | Current:   124.00
+Episode   1130 | Avg Reward:    91.29 | Current:    42.00
+Episode   1140 | Avg Reward:    89.78 | Current:    46.00
+Episode   1150 | Avg Reward:    88.75 | Current:   128.00
+Episode   1160 | Avg Reward:    89.41 | Current:    76.00
+Episode   1170 | Avg Reward:    90.28 | Current:   171.00
+Episode   1180 | Avg Reward:    89.69 | Current:   104.00
+Episode   1190 | Avg Reward:    87.17 | Current:    38.00
+Episode   1200 | Avg Reward:    88.52 | Current:    92.00
+Episode   1210 | Avg Reward:    89.81 | Current:    34.00
+Episode   1220 | Avg Reward:    87.05 | Current:    78.00
+Episode   1230 | Avg Reward:    86.75 | Current:    64.00
+Episode   1240 | Avg Reward:    86.46 | Current:    82.00
+Episode   1250 | Avg Reward:    87.99 | Current:    52.00
+Episode   1260 | Avg Reward:    87.85 | Current:   112.00
+Episode   1270 | Avg Reward:    88.62 | Current:    48.00
+Episode   1280 | Avg Reward:    91.21 | Current:   104.00
+Episode   1290 | Avg Reward:    92.09 | Current:    74.00
+Episode   1300 | Avg Reward:    90.66 | Current:    38.00
+Episode   1310 | Avg Reward:    90.23 | Current:    44.00
+Episode   1320 | Avg Reward:    92.43 | Current:    48.00
+Episode   1330 | Avg Reward:    91.11 | Current:    58.00
+Episode   1340 | Avg Reward:    92.72 | Current:    90.00
+Episode   1350 | Avg Reward:    91.80 | Current:    60.00
+Episode   1360 | Avg Reward:    91.93 | Current:    36.00
+Episode   1370 | Avg Reward:    90.71 | Current:    44.00
+Episode   1380 | Avg Reward:    91.14 | Current:   110.00
+Episode   1390 | Avg Reward:    91.82 | Current:   156.00
+Episode   1400 | Avg Reward:    93.92 | Current:    44.00
+Episode   1410 | Avg Reward:    94.15 | Current:   122.00
+Episode   1420 | Avg Reward:    92.17 | Current:    95.00
+Episode   1430 | Avg Reward:    92.81 | Current:    70.00
+Episode   1440 | Avg Reward:    91.62 | Current:   130.00
+Episode   1450 | Avg Reward:    91.88 | Current:   108.00
+Episode   1460 | Avg Reward:    90.50 | Current:    44.00
+Episode   1470 | Avg Reward:    90.88 | Current:   152.00

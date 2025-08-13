@@ -1,0 +1,14 @@
+{"time":"2025-08-07T17:01:37.84870588+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-07T17:01:38.166483338+01:00","level":"INFO","msg":"stream: created new stream","id":"ta9fpzqh"}
+{"time":"2025-08-07T17:01:38.166542376+01:00","level":"INFO","msg":"stream: started","id":"ta9fpzqh"}
+{"time":"2025-08-07T17:01:38.166553213+01:00","level":"INFO","msg":"handler: started","stream_id":"ta9fpzqh"}
+{"time":"2025-08-07T17:01:38.166589433+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ta9fpzqh"}
+{"time":"2025-08-07T17:01:38.166593281+01:00","level":"INFO","msg":"sender: started","stream_id":"ta9fpzqh"}
+{"time":"2025-08-07T17:57:39.065062185+01:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kaoutar-et-tamadit-ibn-tofail/Fruit_Market_melt/ta9fpzqh/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-07T18:10:13.003084019+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-07T18:10:13.229247501+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-07T18:10:13.232446951+01:00","level":"INFO","msg":"stream: closing","id":"ta9fpzqh"}
+{"time":"2025-08-07T18:10:13.232468505+01:00","level":"INFO","msg":"handler: closed","stream_id":"ta9fpzqh"}
+{"time":"2025-08-07T18:10:13.232490355+01:00","level":"INFO","msg":"sender: closed","stream_id":"ta9fpzqh"}
+{"time":"2025-08-07T18:10:13.232484105+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ta9fpzqh"}
+{"time":"2025-08-07T18:10:13.232598109+01:00","level":"INFO","msg":"stream: closed","id":"ta9fpzqh"}

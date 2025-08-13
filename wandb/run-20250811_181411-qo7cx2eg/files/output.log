@@ -1,0 +1,101 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : coins
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : item-aware-social-influence
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on coins
+================================================================================
+Creating environment: coins
+[INFO] Substrate 'coins' requires 2 players
+[DEBUG] Using roles: ('default', 'default')
+Structured feature dimension: 20
+Number of players: 2
+
+=== OBSERVATION DEBUG ===
+Observation type: <class 'dict'>
+Observation keys: ['COLLECTIVE_REWARD', 'RGB', 'MISMATCHED_COIN_COLLECTED_BY_PARTNER', 'WORLD.RGB']
+  COLLECTIVE_REWARD: shape (), dtype float64
+  RGB: shape (88, 88, 3), dtype uint8
+  MISMATCHED_COIN_COLLECTED_BY_PARTNER: shape (), dtype float64
+  WORLD.RGB: shape (136, 136, 3), dtype uint8
+=========================
+
+[INFO] Environment created with 2 players
+[CONFIG] Updated player count: 2
+
+=== ENVIRONMENT VALIDATION ===
+Reset observation type: <class 'dict'>
+Number of agents: 2
+First agent observation type: <class 'dict'>
+✓ Structured features extracted: 20 dimensions
+✓ Item positions extracted: (0, 2)
+==============================
+
+Creating attention_influence trainer...
+Feature dim: 20, Action dim: 7
+Starting training for 5000 episodes...
+[DEBUG] Raw features shape: 28
+[DEBUG] Expected feature_dim: 20
+[DEBUG] Features: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]...
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+Error in episode 0: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensors in method wrapper_CUDA_cat)
+Continuing training...
+[DEBUG] Raw features shape: 28
+[DEBUG] Expected feature_dim: 20
+[DEBUG] Features: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]...
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+Error in episode 1: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensors in method wrapper_CUDA_cat)
+Continuing training...
+[DEBUG] Raw features shape: 28
+[DEBUG] Expected feature_dim: 20
+[DEBUG] Features: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]...
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+Error in episode 2: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensors in method wrapper_CUDA_cat)
+Continuing training...
+[DEBUG] Raw features shape: 28
+[DEBUG] Expected feature_dim: 20
+[DEBUG] Features: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]...
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+Error in episode 3: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensors in method wrapper_CUDA_cat)
+Continuing training...
+[DEBUG] Raw features shape: 28
+[DEBUG] Expected feature_dim: 20
+[DEBUG] Features: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]...
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+[WARNING] Feature dimension mismatch! Got 28, expected 20
+[WARNING] Truncated features to 20
+Error in episode 4: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensors in method wrapper_CUDA_cat)
+Continuing training...
+
+Training interrupted by user

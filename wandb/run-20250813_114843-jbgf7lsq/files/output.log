@@ -1,0 +1,55 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : fruit_market__concentric_rivers
+num_players         : None
+model_type          : basic_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : fruit_market_melt
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: basic_influence on fruit_market__concentric_rivers
+================================================================================
+[INFO] Using default player count for 'fruit_market__concentric_rivers': 7
+[DEBUG] Using roles: ['banana_farmer', 'apple_farmer', 'banana_farmer', 'apple_farmer', 'banana_farmer', 'apple_farmer', 'banana_farmer']
+[INFO] Successfully created environment 'fruit_market__concentric_rivers' with 7 players
+[INFO] Wrapper initialized - Feature dim: 28, Players: 7
+[CONFIG] Updated player count: 7
+[WARNING] Unknown substrate 'fruit_market__concentric_rivers', using default action_dim=8
+[CONFIG] Creating basic_influence trainer...
+[CONFIG] Feature dim: 28, Action dim: 8
+Starting training for 5000 episodes...
+Episode      0 | Avg Reward:   104.00 | Current:   104.00
+Episode     10 | Avg Reward:    82.91 | Current:    80.00
+Episode     20 | Avg Reward:    87.05 | Current:   118.00
+Episode     30 | Avg Reward:    80.68 | Current:    56.00
+Episode     40 | Avg Reward:    86.98 | Current:   116.00
+Episode     50 | Avg Reward:    90.53 | Current:   138.00
+Episode     60 | Avg Reward:    90.43 | Current:   128.00
+Episode     70 | Avg Reward:    89.27 | Current:    70.00
+Episode     80 | Avg Reward:    89.16 | Current:   118.00
+Episode     90 | Avg Reward:    88.07 | Current:    64.00
+Episode    100 | Avg Reward:    88.85 | Current:    48.00
+Episode    110 | Avg Reward:    89.78 | Current:    94.00
+Episode    120 | Avg Reward:    90.78 | Current:    88.00
+Episode    130 | Avg Reward:    93.22 | Current:    54.00
+Episode    140 | Avg Reward:    93.29 | Current:    78.00
+Episode    150 | Avg Reward:    90.17 | Current:    92.00
+Episode    160 | Avg Reward:    90.50 | Current:    88.00
+Episode    170 | Avg Reward:    93.54 | Current:    36.00
+Episode    180 | Avg Reward:    94.14 | Current:   124.00
+Episode    190 | Avg Reward:    95.64 | Current:    86.00
+Episode    200 | Avg Reward:    95.05 | Current:    86.00

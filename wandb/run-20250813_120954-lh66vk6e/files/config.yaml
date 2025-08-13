@@ -1,0 +1,99 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            1ccpxi7t0woq4i7ws98yra8gdrbjh2vt:
+                args:
+                    - --substrate
+                    - fruit_market__concentric_rivers
+                    - --wandb-project
+                    - fruit_market_melt
+                    - --use-wandb
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "252841140224"
+                        used: "162705936384"
+                email: kaoutar.et-tamadit@uit.ac.ma
+                executable: /home/kaou-internship/anaconda3/envs/melt/bin/python
+                git:
+                    commit: 652d46042dddde7ddc6e7967715f2d7124ebc218
+                    remote: https://github.com/google-deepmind/meltingpot
+                gpu: NVIDIA RTX A5000
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-7bb78ab5-05d4-00c1-77b0-6181b081e7cb
+                host: kaou-internship-Precision-5820-Tower
+                memory:
+                    total: "33324404736"
+                os: Linux-6.14.0-24-generic-x86_64-with-glibc2.39
+                program: -m examples.rllib.training
+                python: CPython 3.11.11
+                root: /home/kaou-internship/meltingpot
+                startedAt: "2025-08-13T11:09:54.471402Z"
+                writerId: 1ccpxi7t0woq4i7ws98yra8gdrbjh2vt
+        m: []
+        python_version: 3.11.11
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 12
+            "2":
+                - 1
+                - 2
+                - 3
+                - 12
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.11
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": linux-x86_64
+action_dim:
+    value: null
+curriculum_steps:
+    value: 1000000
+device:
+    value: cuda
+eps_clip:
+    value: 0.2
+feature_dim:
+    value: null
+gamma:
+    value: 0.99
+hidden_dim:
+    value: 256
+influence_weight:
+    value: 0.1
+k_epochs:
+    value: 4
+log_interval:
+    value: 10
+lr:
+    value: 0.0003
+model_type:
+    value: attention_influence
+num_episodes:
+    value: 5000
+num_players:
+    value: null
+save_interval:
+    value: 500
+substrate_name:
+    value: fruit_market__concentric_rivers
+use_wandb:
+    value: true
+wandb_entity:
+    value: null
+wandb_project:
+    value: fruit_market_melt

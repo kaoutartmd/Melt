@@ -1,0 +1,13 @@
+{"time":"2025-08-11T12:06:53.847969757+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-11T12:06:54.163989183+01:00","level":"INFO","msg":"stream: created new stream","id":"eecves18"}
+{"time":"2025-08-11T12:06:54.164043258+01:00","level":"INFO","msg":"stream: started","id":"eecves18"}
+{"time":"2025-08-11T12:06:54.164092211+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"eecves18"}
+{"time":"2025-08-11T12:06:54.164091493+01:00","level":"INFO","msg":"sender: started","stream_id":"eecves18"}
+{"time":"2025-08-11T12:06:54.164176124+01:00","level":"INFO","msg":"handler: started","stream_id":"eecves18"}
+{"time":"2025-08-11T12:07:02.909214714+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-11T12:07:03.152409111+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 2-6542","runtime_seconds":0.227198279}],"total_operations":1}}
+{"time":"2025-08-11T12:07:03.335838182+01:00","level":"INFO","msg":"stream: closing","id":"eecves18"}
+{"time":"2025-08-11T12:07:03.335859501+01:00","level":"INFO","msg":"handler: closed","stream_id":"eecves18"}
+{"time":"2025-08-11T12:07:03.335872274+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eecves18"}
+{"time":"2025-08-11T12:07:03.335893656+01:00","level":"INFO","msg":"sender: closed","stream_id":"eecves18"}
+{"time":"2025-08-11T12:07:03.33597289+01:00","level":"INFO","msg":"stream: closed","id":"eecves18"}

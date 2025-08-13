@@ -1,0 +1,20 @@
+{
+  "os":  "Linux-6.14.0-24-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.11.11",
+  "startedAt":  "2025-08-07T14:52:47.977507Z",
+  "args":  [
+    "--use-wandb",
+    "--substrate",
+    "harvest"
+  ],
+  "program":  "-m examples.rllib.training",
+  "git":  {
+    "remote":  "https://github.com/google-deepmind/meltingpot",
+    "commit":  "652d46042dddde7ddc6e7967715f2d7124ebc218"
+  },
+  "email":  "kaoutar.et-tamadit@uit.ac.ma",
+  "root":  "/home/kaou-internship/meltingpot",
+  "host":  "kaou-internship-Precision-5820-Tower",
+  "executable":  "/home/kaou-internship/anaconda3/envs/melt/bin/python",
+  "writerId":  "jnsrdqo003n6qvssl795yzwkvgi23z8u"
+}

@@ -1,0 +1,28 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : coins
+num_players         : 7
+model_type          : attention_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : item-aware-social-influence
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: attention_influence on coins
+================================================================================
+Creating environment: coins
+[DEBUG] Using roles: ['default', 'default', 'default', 'default', 'default', 'default', 'default']
+Training failed with error: Wrong number of players

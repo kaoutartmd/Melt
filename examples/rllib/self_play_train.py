@@ -56,7 +56,7 @@ def get_config(
   # Gets the default training configuration
   config = ppo.PPOConfig()
   # Number of arenas.
-  config.num_rollout_workers = num_rollout_workers
+  config.num_env_runners = num_rollout_workers
   # This is to match our unroll lengths.
   config.rollout_fragment_length = rollout_fragment_length
   # Total (time x batch) timesteps on the learning update.
@@ -66,7 +66,11 @@ def get_config(
   # Use the raw observations/actions as defined by the environment.
   config.preprocessor_pref = None
   # Use TensorFlow as the tensor framework.
-  config = config.framework("tf")
+  config = config.framework("torch")
+  config.api_stack(
+       enable_rl_module_and_learner=False,
+        enable_env_runner_and_connector_v2=False
+    )
   # Use GPUs iff `RLLIB_NUM_GPUS` env var set to > 0.
   config.num_gpus = int(os.environ.get("RLLIB_NUM_GPUS", "0"))
   config.log_level = "DEBUG"
@@ -124,7 +128,7 @@ def get_config(
   config.model["conv_activation"] = "relu"
   config.model["post_fcnet_hiddens"] = post_fcnet_hiddens
   config.model["post_fcnet_activation"] = "relu"
-  config.model["use_lstm"] = True
+  config.model["use_lstm"] = False
   config.model["lstm_use_prev_action"] = True
   config.model["lstm_use_prev_reward"] = False
   config.model["lstm_cell_size"] = lstm_cell_size

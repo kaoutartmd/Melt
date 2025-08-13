@@ -1,0 +1,36 @@
+Training Configuration:
+----------------------------------------
+substrate_name      : fruit_market__concentric_rivers
+num_players         : None
+model_type          : basic_influence
+feature_dim         : None
+action_dim          : None
+hidden_dim          : 256
+num_episodes        : 5000
+lr                  : 0.0003
+gamma               : 0.99
+eps_clip            : 0.2
+k_epochs            : 4
+influence_weight    : 0.1
+curriculum_steps    : 1000000
+device              : cuda
+save_interval       : 500
+log_interval        : 10
+use_wandb           : True
+wandb_project       : fruit_market_melt
+wandb_entity        : None
+----------------------------------------
+================================================================================
+Starting training: basic_influence on fruit_market__concentric_rivers
+================================================================================
+[INFO] Using default player count for 'fruit_market__concentric_rivers': 7
+[DEBUG] Using roles: ['banana_farmer', 'apple_farmer', 'banana_farmer', 'apple_farmer', 'banana_farmer', 'apple_farmer', 'banana_farmer']
+[INFO] Successfully created environment 'fruit_market__concentric_rivers' with 7 players
+[INFO] Wrapper initialized - Feature dim: 28, Players: 7
+[CONFIG] Updated player count: 7
+[WARNING] Unknown substrate 'fruit_market__concentric_rivers', using default action_dim=8
+[CONFIG] Creating basic_influence trainer...
+[CONFIG] Feature dim: 28, Action dim: 8
+Starting training for 5000 episodes...
+Episode      0 | Avg Reward:    52.00 | Current:    52.00
+Episode     10 | Avg Reward:    82.91 | Current:   122.00

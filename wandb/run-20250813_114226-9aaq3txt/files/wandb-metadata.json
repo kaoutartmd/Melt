@@ -1,0 +1,49 @@
+{
+  "os":  "Linux-6.14.0-24-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.11.11",
+  "startedAt":  "2025-08-13T10:42:26.848525Z",
+  "args":  [
+    "--substrate",
+    "commons_harvest__open",
+    "--model-type",
+    "attention_influence",
+    "--wandb-project",
+    "social-influence-structured",
+    "--use-wandb",
+    "--resume-from",
+    "checkpoints/attention_influence_commons_harvest__open_20250811_1"
+  ],
+  "program":  "-m examples.rllib.training",
+  "git":  {
+    "remote":  "https://github.com/google-deepmind/meltingpot",
+    "commit":  "652d46042dddde7ddc6e7967715f2d7124ebc218"
+  },
+  "email":  "kaoutar.et-tamadit@uit.ac.ma",
+  "root":  "/home/kaou-internship/meltingpot",
+  "host":  "kaou-internship-Precision-5820-Tower",
+  "executable":  "/home/kaou-internship/anaconda3/envs/melt/bin/python",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA RTX A5000",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "252841140224",
+      "used":  "162698940416"
+    }
+  },
+  "memory":  {
+    "total":  "33324404736"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA RTX A5000",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  8192,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-7bb78ab5-05d4-00c1-77b0-6181b081e7cb"
+    }
+  ],
+  "cudaVersion":  "12.2",
+  "writerId":  "gtdhgdvzpw73bej54jgq2bsjxavuwswg"
+}

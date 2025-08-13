@@ -1,0 +1,1 @@
+{"episode_reward":68,"avg_attention_entropy":1.7917596101760864,"attention_entropy":1.7917596101760864,"_runtime":674,"avg_reward_100":68,"_wandb":{"runtime":674},"episode_length":1000,"avg_influence_reward":6.386212130544371e-09,"_timestamp":1.7550840037167149e+09,"influence_weight":0.0005,"total_steps":6000,"episode":6,"current_influence_weight":0.0001,"_step":6}

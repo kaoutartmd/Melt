@@ -1,0 +1,11 @@
+Requirement already satisfied: ml_dtypes in /home/kaou-internship/anaconda3/envs/melt/lib/python3.11/site-packages (0.2.0)
+Collecting ml_dtypes
+  Using cached ml_dtypes-0.5.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.9 kB)
+Requirement already satisfied: numpy>=1.21 in /home/kaou-internship/anaconda3/envs/melt/lib/python3.11/site-packages (from ml_dtypes) (1.26.4)
+Using cached ml_dtypes-0.5.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (4.9 MB)
+Installing collected packages: ml_dtypes
+  Attempting uninstall: ml_dtypes
+    Found existing installation: ml-dtypes 0.2.0
+    Uninstalling ml-dtypes-0.2.0:
+      Successfully uninstalled ml-dtypes-0.2.0
+Successfully installed ml_dtypes-0.5.3
